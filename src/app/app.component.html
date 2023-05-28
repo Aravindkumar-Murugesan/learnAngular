@@ -1,0 +1,11 @@
+<h1>Welcome you {{name}}</h1>
+<h1>{{'Full Name = ' + getFullname()}}</h1>
+<img src='{{imagePath}}'/>
+<employee-app></employee-app>
+<button [disabled]="isdisable">Check</button>
+<img [src]='imagePath'>
+<button disabled={{isdisable}}>Check</button>
+<button class='colorClass' [ngClass]='addClasses()'>My Button1</button>
+<button class='colorClass boldClass'
+[class.boldClass]='applyBoldClass'>My Button2</button>
+<button class='colorClass' [class.italicsClass]='!applyBoldClass'>My Button3</button>
