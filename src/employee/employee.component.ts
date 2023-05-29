@@ -11,4 +11,9 @@ export class employeeComponent{
     lastName: string = "M";
     gender: string ="Male";
     age : number = 27;
+    showDetails: boolean = false;
+
+    toggleDetails(): void {
+        this.showDetails = !this.showDetails;
+    }
 }

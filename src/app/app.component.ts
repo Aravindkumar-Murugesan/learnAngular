@@ -18,6 +18,19 @@ export class AppComponent{
   isdisable : boolean = false;
   applyBoldClass: boolean = true;
   applyItalicsClass: boolean = true;
+  isBold: boolean = true;
+  fontSize: number = 30;
+  isItalic: boolean = true;
+
+  addStyles() {
+      let styles = {
+          'font-weight': this.isBold ? 'bold' : 'normal',
+          'font-style': this.isItalic ? 'italic' : 'normal',
+          'font-size.px': this.fontSize
+      };
+
+      return styles;
+  }
   getFullname() : string{
     return this.fistname + " " + this.lastname;
   }

@@ -9,3 +9,13 @@
 <button class='colorClass boldClass'
 [class.boldClass]='applyBoldClass'>My Button2</button>
 <button class='colorClass' [class.italicsClass]='!applyBoldClass'>My Button3</button>
+<button style='color:red' [ngStyle]="addStyles()">Button</button>
+<button style='color:red'
+                        [style.font-size.px]="fontSize">Button
+                </button>
+                <button style='color:red'
+                [style.font-weight]="isBold ? 'bold' : 'normal'">Button
+        </button>
+        <br/>
+        Name :<input [(ngModel)]= 'name' />
+        You Typed : {{name}}
