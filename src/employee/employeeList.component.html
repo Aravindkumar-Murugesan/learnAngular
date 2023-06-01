@@ -1,3 +1,9 @@
+
+<employee-count [all]="getTotalEmployeesCount()"
+                [male]="getMaleEmployeesCount()"
+                [female]="getFemaleEmployeesCount()"
+></employee-count>
+<br /><br />
 <table>
     <thead>
         <tr>
@@ -9,7 +15,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor='let employee of employees;trackBy:trackByEmpCode;'>
+        <tr *ngFor='let employee of employees;'>
             <td>{{employee.code | uppercase}}</td>
             <td>{{employee.name | employeeTitle :employee.gender}}</td>
             <td>{{employee.gender}}</td>
@@ -23,5 +29,3 @@
         </tr>
     </tbody>
 </table>
-<br />
-<button (click)='getEmployees()'>Refresh Employees</button>

@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import {employeeComponent} from '../employee/employee.component';
 import {employeeListComponent} from '../employee/employeeList.component';
 import { employeeTitle } from 'src/employee/employeeTitle.pipe';
+import { employeeCount } from 'src/employee/employeeCount.component';
 @NgModule({
   declarations: [
-    AppComponent,employeeComponent,employeeListComponent,employeeTitle
+    AppComponent,employeeComponent,employeeListComponent,employeeTitle,employeeCount
   ],
   imports: [
     BrowserModule,
