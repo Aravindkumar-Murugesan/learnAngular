@@ -2,6 +2,7 @@
 <employee-count [all]="getTotalEmployeesCount()"
                 [male]="getMaleEmployeesCount()"
                 [female]="getFemaleEmployeesCount()"
+                (countButtonSelectionChanged)="onEmployeeCountChange($event)"
 ></employee-count>
 <br /><br />
 <table>

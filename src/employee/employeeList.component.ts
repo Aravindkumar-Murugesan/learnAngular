@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
 
 export class employeeListComponent {
     employees: any[];
-
+    selectedEmployeeCount : string = 'All';
     constructor() {
         this.employees = [
             {
@@ -37,6 +37,11 @@ export class employeeListComponent {
             }
         ];
     }
+
+    onEmployeeCountChange(selectedvalue : string) : void {
+        this.selectedEmployeeCount =  selectedvalue;
+    }
+
     getTotalEmployeesCount(): number {
         return this.employees.length;
     }
